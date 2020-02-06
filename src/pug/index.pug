@@ -1,0 +1,34 @@
+include ../blocks/header/_header.pug
+include ../blocks/nav/_nav.pug
+include ../blocks/choose/_choose.pug
+include ../blocks/search/_search.pug
+include ../pug/logo.svg
+include ../blocks/spain_house/_spain_house.pug
+include ../blocks/spain_sea/_spain_sea.pug
+include ../blocks/spain_info/_spain_info.pug
+include ../blocks/tourist/_tourist.pug
+include ../blocks/footer/_footer.pug
+include ../blocks/burger/_burger.pug
+
+
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Document
+        link(rel="stylesheet", href="./css/style.css")
+    body
+        +header
+        +nav
+        +choose
+        +search
+        +spain_house
+        +spain_sea
+        +tourist
+        +footer
+
+
+        script(src="https://kit.fontawesome.com/eed4fbf255.js" crossorigin="anonymous")
+        script(src="https://code.jquery.com/jquery-3.4.1.min.js")

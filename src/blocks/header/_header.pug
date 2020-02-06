@@ -1,0 +1,25 @@
+mixin header
+    .header#header
+        .container
+            .row.d-flex.justify-content-center
+                .col-xl-6.col-md-8.col-12
+                    +burger
+                    .header__main
+                        h1.d-flex.justify-content-center
+                            a.header__main__title(href="javascript:void(0)") BHROMAON
+                        p.header__main__subtitle.d-flex.justify-content-center Safe Travel Anywhere
+            .row.d-flex.justify-content-center
+                .col-xl-8.col-lg-10.col-12.d-md-block.d-none
+                    form.header__form.d-flex.justify-content-center(action='#' method="GET")
+                        input#search.header__form__search.grow-1(type="search", name="search" placeholder='Search Your Travel Destination')
+                        button.header__form__search--btn.d-flex(type="submit" for="search") SEARCH
+                            i.fas.fa-search
+                    .header__scroll
+                        p.header__scroll__text Scroll Down
+                        a.header__scroll__link(href="#nav")
+                            i.fas.fa-chevron-down.header__scroll__link--img 
+                .col-12.d-md-none.d-block
+                    form.form.d-flex.flex-column.d-flex.justify-content-center(action='#' method="GET")
+                        input#search.form__search.grow-1(type="search", name="search" placeholder='Search Your Travel Destination')
+                        button.form__search--btn.d-flex(type="submit" for="search") SEARCH
+                            i.fas.fa-search

@@ -1,0 +1,120 @@
+.navb{
+    width: 100%;
+}
+
+.burger__navbar{
+        display: none;
+        transition: .8s;
+            
+        @media screen and(max-width:767px){
+            position: fixed;
+            top:0;
+            left: 0;
+            width: 100%;
+            z-index: 1;
+            transition: ease 0.5s;
+            overflow: hidden;
+            background-color: rgba(95, 86, 86, 0.5);
+            flex-direction: column;
+        }
+
+       &__item{
+            display: none;
+            margin: 0;
+            padding-top: 35px;
+            padding-left: 16px;
+            text-align: center;
+        
+            @media screen and(max-width:767px){
+                display: block;
+                border-top: 1px solid #fff;
+                padding: 10px 0;
+                margin: 0;
+            }
+        }
+    }
+
+
+
+.burger__navbar__item--link{
+    width: 100%;
+    color: #ffff;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-top: 3px solid transparent;
+    padding-top: 4px;
+
+    &:hover{
+        color: #333333;
+    }
+
+    @media screen and(max-width:767px){
+        border-top: transparent;
+        cursor: pointer;
+    }
+}
+
+.fa-bars{
+    font-size: 48px;
+}
+
+.fa-times{
+    font-size: 48px;
+}
+
+.burger{
+    display: none;
+   
+    &:checked + &__label > .fa-bars{
+        display: none;
+        position: fixed;
+        z-index: 5;
+    }
+
+    & + &__label > .fa-bars{
+        display: block;
+    }
+
+    &:checked + &__label > .fa-times{
+        display: block;
+        position: fixed;
+        z-index: 5;
+    }
+
+    & + &__label > .fa-times{
+        display: none;
+    }
+
+    &:checked + &__label + .burger__navbar{
+       
+        @media screen and(max-width:767px){
+            height: 180px;
+        }
+    }
+
+    & + &__label + .burger__navbar{
+        @media screen and(max-width:767px){
+            height: 0px;
+        }
+    }
+
+    &__label{
+        display: none;
+
+        @media screen and(max-width:767px){
+            display: block;
+            position: absolute;
+            top:10px;
+            right: 0px;
+        }
+
+        @media screen and(max-width:635px){
+            display: block;
+            position: absolute;
+            top:10px;
+            right: 40px;
+        }
+    }
+}

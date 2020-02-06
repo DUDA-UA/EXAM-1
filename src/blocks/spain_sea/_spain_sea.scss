@@ -1,0 +1,19 @@
+.spain_sea{
+    background-image: url(../img/Spain2.png);
+    background-size: cover;
+    background-position: top;
+    width: 100%;
+    padding: 228px 0px 103px 0px;
+
+    @media screen and (max-width: 1199px){
+        padding: 90px 0px 40px 0px;
+    }
+
+    @media screen and (min-resolution: 2dppx){
+        background-image: url(../img/Spain2x2.png);
+    }
+
+    @media screen and (min-resolution: 3dppx){
+        background-image: url(../img/Spain2x3.png);
+    }
+}

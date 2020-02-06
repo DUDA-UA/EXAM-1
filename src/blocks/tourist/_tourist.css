@@ -1,0 +1,97 @@
+.tourist {
+  background-image: url(../img/tourist.png);
+  background-position: top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  padding: 115px 0px 200px 0px; }
+  @media screen and (max-width: 1199px) {
+    .tourist {
+      padding: 70px 0px 70px 0px; } }
+  @media screen and (max-width: 991px) {
+    .tourist {
+      padding: 50px 0px; } }
+  @media screen and (-webkit-min-device-pixel-ratio: 2), screen and (-o-min-device-pixel-ratio: 2/1), screen and (min-resolution: 2dppx) {
+    .tourist {
+      background-image: url(../img/touristx2.png); } }
+  @media screen and (-webkit-min-device-pixel-ratio: 3), screen and (-o-min-device-pixel-ratio: 3/1), screen and (min-resolution: 3dppx) {
+    .tourist {
+      background-image: url(../img/touristx3.png); } }
+  .tourist__title {
+    color: white;
+    font-family: 'Aleo';
+    font-size: 36px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: .6;
+    padding-bottom: 95px; }
+    @media screen and (max-width: 991px) {
+      .tourist__title {
+        padding-bottom: 45px; } }
+    @media screen and (max-width: 320px) {
+      .tourist__title {
+        font-size: 28px; } }
+  @media screen and (max-width: 991px) {
+    .tourist__box {
+      margin: 0 auto; } }
+  .tourist__section {
+    background-color: #333333; }
+    @media screen and (max-width: 991px) {
+      .tourist__section {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -moz-box-orient: vertical;
+        -moz-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin: 0 auto; } }
+    .tourist__section__img {
+      max-width: 445px;
+      height: 284px; }
+      @media screen and (max-width: 991px) {
+        .tourist__section__img {
+          max-width: 100%;
+          height: auto; } }
+    .tourist__section__info--title {
+      color: #fefefe;
+      font-family: 'Josefin Sans';
+      font-size: 20px;
+      font-weight: 400;
+      padding-top: 50px;
+      padding-left: 60px;
+      letter-spacing: -.8;
+      padding-bottom: 26px; }
+      @media screen and (max-width: 1199px) {
+        .tourist__section__info--title {
+          padding-bottom: 15px;
+          padding-left: 20px; } }
+      @media screen and (max-width: 991px) {
+        .tourist__section__info--title {
+          padding-top: 20px; } }
+    .tourist__section__info--text {
+      color: #e8e8e8;
+      font-family: 'Josefin Sans';
+      font-size: 16px;
+      padding-left: 60px;
+      line-height: 27px;
+      text-indent: 30px;
+      margin-top: -5px;
+      letter-spacing: -1.1;
+      width: 95%; }
+      @media screen and (max-width: 1199px) {
+        .tourist__section__info--text {
+          width: 100%;
+          padding-bottom: 20px;
+          padding-left: 20px; } }
+
+.fa-quote-left {
+  color: #5474fd;
+  font-size: 20px;
+  padding-left: 60px; }
+  @media screen and (max-width: 1199px) {
+    .fa-quote-left {
+      font-size: 20px;
+      padding-left: 20px; } }

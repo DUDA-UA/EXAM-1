@@ -1,0 +1,116 @@
+.tourist{
+    background-image: url(../img/tourist.png);
+    background-position: top;
+    background-size: cover;
+    width: 100%;
+    padding: 115px 0px 200px 0px;
+
+    @media screen and (max-width: 1199px){
+        padding: 70px 0px 70px 0px;
+    }
+
+    @media screen and (max-width: 991px){
+        padding: 50px 0px;
+    }
+
+    @media screen and (min-resolution: 2dppx){
+        background-image: url(../img/touristx2.png);
+    }
+
+    @media screen and (min-resolution: 3dppx){
+        background-image: url(../img/touristx3.png);
+    }
+
+    &__title{
+        color: white;
+        font-family: 'Aleo';
+        font-size: 36px;
+        font-weight: 400;
+        text-align: center;
+        letter-spacing: .6;
+        padding-bottom: 95px;
+
+        @media screen and (max-width: 991px){
+            padding-bottom: 45px;
+        }
+
+        @media screen and(max-width:320px){
+            font-size: 28px;
+        }
+
+    }
+
+    &__box{
+        @media screen and (max-width: 991px){
+            margin: 0 auto;
+        }
+    }
+    
+    &__section{
+        background-color: #333333;
+
+        @media screen and (max-width: 991px){
+            flex-direction: column;
+            margin: 0 auto;
+        }
+
+        &__img{
+                max-width:445px;
+                height: 284px;
+
+            @media screen and (max-width:991px){
+                max-width:100%;
+                height: auto;
+            }
+        }
+
+        &__info--title{
+            color: #fefefe;
+            font-family: 'Josefin Sans';
+            font-size: 20px;
+            font-weight: 400;
+            padding-top: 50px;
+            padding-left: 60px;
+            letter-spacing: -.8;
+            padding-bottom: 26px;
+
+            @media screen and (max-width: 1199px){
+                padding-bottom: 15px;
+                padding-left: 20px;
+            }
+
+            @media screen and (max-width: 991px){
+                padding-top: 20px;
+            }
+        }
+
+        &__info--text{
+            color: #e8e8e8;
+            font-family: 'Josefin Sans';
+            font-size: 16px;
+            padding-left: 60px;
+            line-height: 27px;
+            text-indent: 30px;
+            margin-top: -5px;
+            letter-spacing: -1.1;
+            width: 95%;
+
+            @media screen and (max-width: 1199px){
+                width: 100%;
+                padding-bottom: 20px;
+                padding-left: 20px;
+            }
+        }
+    }
+}
+
+.fa-quote-left{
+    color: #5474fd;
+    font-size: 20px;
+    padding-left: 60px;
+
+    @media screen and (max-width: 1199px){
+        font-size: 20px;
+        padding-left: 20px;
+    }
+}

@@ -1,0 +1,56 @@
+.nav{
+    background-color: #5474fd;
+    width: 100%;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 34px 0 24px 0;
+
+    @media screen and (max-width:991px){
+        padding: 20px 0px;
+}
+
+@media screen and (max-width:767px){
+    display: none;
+}
+
+    &__title{
+        &--link{
+        font-size: 24px;
+        color: #ffffff;
+        font-weight: 700;
+        letter-spacing: 1;
+        margin-top: -10px;
+        text-decoration: none;
+
+        &:hover{
+            color: #333333;
+        }
+        }
+        @media screen and (max-width:991px){
+            margin: 0 auto;
+            padding-bottom: 10px;
+    }
+}
+
+    &__navbar{
+        &--item{
+            margin: 0px -7px;
+            list-style-type: none;
+
+            @media screen and (max-width:991px){
+                margin: 0px;
+                display: contents;
+            }
+            &-link{
+                color: white;
+                font-family: 'Aleo';
+                font-size: 14px;
+                font-weight: 400;
+                text-decoration: none;
+
+                &:hover{
+                    color: #333333;
+                }
+            }
+        }
+    }
+}

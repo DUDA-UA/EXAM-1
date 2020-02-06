@@ -1,0 +1,19 @@
+mixin search
+    .search
+        .container
+            .row
+                .col-md-4.col-12.d-flex.justify-content-center.flex-column.align-items-center.dotted
+                    a.d-flex.align-items-center.flex-column.search__section(href='#header')
+                        svg.search__section__img.d-flex.flex-row
+                            use(xlink:href="#search")
+                        p.search__section__title Search Place
+                .col-md-4.col-12.d-flex.justify-content-center.flex-column.align-items-center.dotted
+                    a.d-flex.align-items-center.flex-column.search__section(href='#spain')
+                        svg.search__section__img
+                            use(xlink:href="#select")
+                        p.search__section__title Select Place
+                .col-md-4.col-12.d-flex.justify-content-center.flex-column.align-items-center.dotted
+                    a.d-flex.align-items-center.flex-column.search__section(href='#tourist')
+                        svg.search__section__img
+                            use(xlink:href="#enjoy")
+                        p.search__section__title Book & Enjoy
